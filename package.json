@@ -1,0 +1,23 @@
+{
+    "name": "nodespaskeleton",
+    "version": "1.0.0",
+    "description": "This is a skeleton for a simple single page node project",
+    "main": "server.js",
+    "scripts": {
+        "start": "npm run build-css | npm run watch-css | node server.js",
+        "build-css": "node-sass --include-path scss public/assets/css/main.scss public/assets/css/main.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Chris Milliano <cmilliano@thisisfusion.com>",
+    "license": "MIT",
+        "dependencies": {
+        "express": "^4.14.0",
+        "node": "0.0.0"
+    },
+    "devDependencies": {
+        "dotenv": "^4.0.0",
+        "node-sass": "^4.5.2",
+        "nodemon": "^1.11.0"
+    }
+}
